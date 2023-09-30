@@ -1,10 +1,10 @@
 process.env.NODE_ENV = 'development';
-
+process.env.PORT = 8080;
 const express = require('./config/express');
 
 const app = express();
 
-app.listen(443);
+app.listen(process.env.PORT);
 
 module.exports = app;
 
