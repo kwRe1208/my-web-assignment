@@ -13,9 +13,9 @@ router.get('/about', (req, res, next) => {
     });
 })
 
-router.get('/contact', (req, res, next) => {
-    res.render('Contact', {
-        title: 'Contact'
+router.get('/projects', (req, res, next) => {
+    res.render('projects', {
+        title: 'Projects'
     });
 })
 
