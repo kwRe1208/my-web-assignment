@@ -31,10 +31,10 @@ module.exports = () =>{
     app.use(methodOverride());
 
     //set template engine
-    app.set('views', './app/views');
+    app.set('views', './views');
     app.set('view engine', 'ejs');
     //app.use('/', require('../app/controller/index.server.controller').render);
-    app.use('/', require('../app/routes/index.server.routes'));
+    app.use('/', require('../routes/index.server.routes'));
 
     app.use(express.static('./node_modules'));
 
