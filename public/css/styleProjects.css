@@ -1,0 +1,11 @@
+/*
+Student ID: 301363058
+Student Name: Yu Kwan Wong
+File Name: styleProjects.css
+*/
+.card-img-custom {
+    max-height: 200px;  /* Adjust this value as needed */
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    width: 100%;       /* Ensuring the width fits the card */
+}
+

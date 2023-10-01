@@ -1,11 +1,141 @@
 <%- include('partials/header.ejs') %>
 
-<h1>Welcome to the <%= title %></h1>
-<p>
-    Name: Kevin Wong<br>
-    Age: 28<br>
-    Address: Hong Kong <br>
-    Loves: Basketball
-</p>
+<%- include('partials/navbar.ejs') %>
+    <!-- Self Introduction Block -->
+    <div class="row">
+        <div class="col-md-4 pe-2">
+            <div class="card">
+                <img src="<%= myPhoto %>" pe-3 class="card-img-top card-custom-img" alt="" alt="My Picture">
+                <div class="card-body">
+                    <h2 class="card-title">
+                      My Profile
+                    <a href="/files/Profile.pdf" class="btn btn-primary" target="_blank">View My Resume</a>
+                  </h2>
+                    <p class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Name: Yu Kwan Wong (Kevin)</li>
+                            <li class="list-group-item">Age: 28</li>
+                            <li class="list-group-item">Country: Hong Kong</li>
+                            <li class="list-group-item">Hobbies: Diablo, Basketball </li>
+                        </ul>
+                        <!-- Button that redirects to a PDF -->
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+          <div class="timeline">
+            <div class="timeline-row">
+              <div class="timeline-time">
+                Sep 2023 - Present<small>2023/09/01 - Present</small>
+              </div>
+              <div class="timeline-content">
+                <i class="icon-attachment"></i>
+                <h4>Student</h4>
+                <p>Centennial College, Software Engineering - Artificial Intelligence (fast-track)</p>
+                <div class="thumbs">
+                  <img class="img-fluid rounded" src="<%= collegeImg %>" alt="Centennital College">
+                </div>
+                <div class="">
+                  <span class="badge badge-pill">Student</span>
+                </div>
+              </div>
+            </div>
+        
+            <div class="timeline-row">
+              <div class="timeline-time">
+                Jul 2021 - Aug 2023<small>2021/07/05 - 2023/08/08</small>
+              </div>
+              <div class="timeline-content">
+                <i class="icon-code"></i>
+                <h4>Senior System Analyst</h4>
+                <p>
+                  KOA Electronics (H.K.) Limited.
+                </p>
+                <div class="thumbs">
+                  <div class="thumbs">
+                  <img class="img-fluid rounded" src="<%= koaImg %>" alt="KOA Electronics">
+                </div>
+                </div>
+                <div class="">
+                  <span class="badge badge-pill">RPA</span>
+                  <span class="badge badge-pill">Power Platform</span>
+                  <span class="badge badge-pill">UIPath</span>
+                  <span class="badge badge-pill">Data</span>
+                  <span class="badge badge-pill">Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-row">
+                <div class="timeline-time">
+                  Aug 2019 - Jun 2021<small>2019/08/19 - 2021/06/30</small>
+                </div>
+                <div class="timeline-content">
+                  <i class="icon-attachment"></i>
+                  <h4>Senior Engineer</h4>
+                  <p>KDDI Hong Kong Limited</p>
+                  <div class="thumbs">
+                    <img class="img-fluid rounded" src="<%= kddiImg %>" alt="KDDI">
+                  </div>
+                  <div class="">
+                    <span class="badge badge-pill">Networking</span>
+                    <span class="badge badge-pill">Cloud</span>
+                    <span class="badge badge-pill">Hardware</span>
+                    <span class="badge badge-pill">Client Support</span>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="timeline-row">
+                <div class="timeline-time">
+                  Aug 2018 - Aug 2019<small>2018/08/29 - 2019/08/16</small>
+                </div>
+                <div class="timeline-content">
+                  <i class="icon-code"></i>
+                  <h4>Mitsubishi UFJ Lease <br>Hong Kong Limited</h4>
+                  <p>
+                    Administrative IT Officer
+                  </p>
+                  <div class="thumbs">
+                    <div class="thumbs">
+                    <img class="img-fluid rounded" src="<%= mufjImg %>" alt="MUFG">
+                  </div>
+                  </div>
+                  <div class="">
+                    <span class="badge badge-pill">M365</span>
+                    <span class="badge badge-pill">Project Management</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-row">
+                <div class="timeline-time">
+                  Sep 2016 - Jun 2019<small>2016/09/08 - 2018/06/30</small>
+                </div>
+                <div class="timeline-content">
+                  <i class="icon-code"></i>
+                  <h4>Communilink Limited</h4>
+                  <p>
+                    Technical Support (Help Desk)
+                  </p>
+                  <div class="thumbs">
+                    <div class="thumbs">
+                    <img class="img-fluid rounded" src="<%= comuilinkImg %>" alt="Communilink">
+                  </div>
+                  </div>
+                  <div class="">
+                    <span class="badge badge-pill">Support</span>
+                    <span class="badge badge-pill">Data Center</span>
+                  </div>
+                </div>
+              </div>
+        
+          </div>
+        </div>
+          
+    </div>
 
 <%- include('partials/footer.ejs') %>

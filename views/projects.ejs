@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+
+<%- include('partials/navbar.ejs') %>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-5">My Previous Projects</h1>
+
+    <div class="row">
+
+        <% projects.forEach(function(project) { %>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="<%= project.imageUrl %>" class="card-img-top card-img-custom" alt="<%= project.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= project.title %></h5>
+                        <p class="card-text"><%= project.description %></p>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

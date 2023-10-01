@@ -2,6 +2,25 @@
 
 <%- include('partials/navbar.ejs') %>
 
-<h1>Welcome to the <%= title %></h1>
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, Everyone!</h1>
+        <p class="lead">Welcome, I'm Kevin Wong. Study in Software Engineering - AI.</p>
+        <hr class="my-4">
+        <p>
+            My mission is to leverage the power of artificial intelligence to create 
+            impactful software solutions. <br>
+            With a dedication to continuous learning 
+            and a passion for innovation, I aim to contribute meaningfully to the 
+            future of technology and its role in improving our world.
+        </p>
+        <hr class="my-4">
+        <p>Learn more about me and my projects by visiting the pages below.</p>
+        <a class="btn btn-primary btn-sm" href="/about" role="button">About Me</a>
+        
+        <!-- You can also add other buttons that link to other pages like so: -->
+        <!-- <a class="btn btn-secondary btn-lg" href="other-page.html" role="button">Other Page</a> -->
+    </div>
+</div>
 
 <%- include('partials/footer.ejs') %>
