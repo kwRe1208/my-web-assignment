@@ -1,7 +1,7 @@
 /*
 Student ID: 301363058
 Student Name: Yu Kwan Wong
-File Name: server.js
+File Name: app.js
 */
 
 process.env.NODE_ENV = 'development';
